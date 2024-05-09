@@ -1,0 +1,37 @@
+* {
+	scroll-behavior: smooth;
+}
+
+.center {
+	text-align: center;
+}
+
+.highlight td {
+	background-color: rgba(255, 255, 255, 0.411);
+	color: #93e4c1;
+	text-decoration: underline;
+	transition: all 1s;
+}
+
+.blink td {
+	animation: blinking 1s;
+	transition: color 1s, text-decoration 1s;
+}
+
+@keyframes blinking {
+	0% {
+		background-color: #13171f;
+		color: #c2c7d0;
+		text-decoration: none;
+	}
+	50% {
+		background-color: rgba(255, 255, 255, 0.411);
+		color: #93e4c1;
+		text-decoration: underline;
+	}
+	100% {
+		background-color: #13171f;
+		color: #c2c7d0;
+		text-decoration: none;
+	}
+}

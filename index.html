@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+		/>
+		<title>Unix TimeStamp</title>
+	</head>
+	<body>
+		<header class="container">
+			<fieldset role="group">
+				<input type="text" name="timestamp" id="timestamp" />
+				<button onclick="save_timestamp()">Convert</button>
+			</fieldset>
+			<p class="center">
+				Current date: <span id="date"></span> <br />
+				Current time: <span id="time"></span> <br />
+				Current timestamp: <span id="curr_timestamp"></span>
+			</p>
+		</header>
+		<main>
+			<table id="timestamp_list">
+				<tr>
+					<th>ID</th>
+					<th>TIMESTAMP</th>
+					<th>DATE</th>
+				</tr>
+			</table>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>
